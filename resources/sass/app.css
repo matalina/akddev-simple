@@ -1,0 +1,164 @@
+:root {
+    --ivory: #f6f7eb;
+    --cinnabar: #e94f37;
+    --onyx: #393e41;
+    --green-blue-crayola: #3f88c5;
+    --keppel: #44bba4;
+
+    --nav-font-size: 1.2rem;
+    --nav-font-margin: -.5rem;
+}
+
+/* Layout */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    padding: .5rem;
+}
+
+footer {
+    width: 100%;
+    padding: .5rem;
+    text-align: center;
+}
+
+section.main {
+    flex-grow: 1;
+    padding-right: 3rem;
+    position: relative;
+}
+
+section.main nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--nav-font-size);
+    margin-right: var(--nav-font-margin);
+    display: flex;
+    justify-content: space-between;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+    font-size: var(--nav-font-size);
+}
+section.main  nav a {
+    display: block;
+    padding: .25rem .5rem;
+    color: var(--cinnabar);
+}
+section.main main {
+    flex: auto;
+    padding-right: 1rem;
+}
+
+/* Theme */
+
+html,body {
+    font-family: 'JetBrains Mono',monospace;
+    font-size: 14pt;
+    background: var(--ivory);
+    color: var(--onyx);
+}
+
+.body {
+    background: var(--onyx);
+    color: var(--ivory);
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    color: var(--cinnabar);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover, a:visited:hover {
+    text-decoration: underline;
+    color: var(--green-blue-crayola);
+}
+
+.card {
+    background: var(--ivory);
+    color: var(--onyx);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.card h1 {
+    position: absolute;
+    top: -2rem;
+    left: 1rem;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    color: var(--keppel);
+    text-shadow: 3px 3px 1px var(--onyx), -3px 3px 1px var(--onyx), 2px -2px 2px var(--green-blue-crayola);
+}
+
+/* Header/Menu */
+
+header .logo {
+    height: 75px;
+}
+
+/* Home */
+
+section.home {
+    text-align: right;
+}
+
+section.home .first {
+    font-size: 2rem;
+    color: var(--cinnabar);
+}
+section.home .last {
+    font-size: 2rem;
+    color: var(--cinnabar);
+}
+section.home .job {
+    font-size: 1.2rem;
+    color: var(--keppel);
+}
+section.home .social {
+    font-size: 2rem;
+}
+
+section.home a {
+    color: var(--ivory);
+}
+
+/* About */
+
+.about {
+    padding-left: 1rem;
+}
+
+/* Skills */
+
+.skills {
+    padding-left: 1rem;
+}
+
+/* Skills */
+
+.portfolio {
+    padding-left: 1rem;
+}
